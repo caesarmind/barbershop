@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<body>
+    <header class="page-header">
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li class="navigation-item"><a class="navigation-link" href="#">Information</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="#">News</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="#">Price List</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="#">Store</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="#">Contacts</a></li>
+            </ul>
+        
+            <ul class="navigation-list navigation-user">
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">
+                        <span class="visually-hidden">
+                            Search
+                        </span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">
+                        <span class="visually-hidden">
+                            Cart
+                        </span>
+                    </a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-index">
+        <h1 class="visually-hidden">Barbershop "Borodinski"</h1>
+        <img class="logo" src="" alt="Logo of Barbershop Borodinski">
+        <section class="features">
+            <h2 class="visually-hidden"> Features</h2>
+            <ul class="features-list">
+                <li class="features-item">
+                    <h3 class="features-title">Fast</h3>
+                    <p class="features-description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>    
+                </li>
+                <li class="features-item">
+                    <h3 class="features-title">Great</h3>
+                    <p class="features-description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>    
+                </li>
+                <li class="features-item">
+                    <h3 class="features-title">Pricey</h3>
+                    <p class="features-description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>    
+                </li>
+            </ul>
+        </section>
+        <section class="services">
+            <h2 class="services-title">Services</h2>
+            <ul class="services-list">
+                <li class="services-item">
+                    <span class="service-name">Cutting hair</span>
+                    <b class="services-price">10$</b>
+                </li>
+                <li class="services-item">
+                    <span class="service-name">Shave Head</span>
+                    <b class="services-price">15$</b>
+                </li>
+                <li class="services-item">
+                    <span class="service-name">Fix Mustache</span>
+                    <b class="services-price">20$</b>
+                </li>
+                <li class="services-item">
+                    <span class="service-name">Coloring of hair</span>
+                    <b class="services-price">40$</b>
+                </li>
+            </ul>
+            <a class="button button-all" href="#">See All</a>
+        </section>
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <img class="slider-image" src="img/studio.jpg" width="100" height="100">
+            <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Next</span>
+            </button>
+
+            <ol class="slider-pagination">
+                <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">1 Photo</span>
+                    </button>
+                </li>
+                <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">2 Photo</span>
+                    </button>
+                </li>
+                <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">3 Photo</span>
+                    </button>
+                </li>
+                <li class="slider-pagination-item">
+                    <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">4 Photo</span>
+                    </button>
+                </li>
+            </ol>
+        </section>
+
+
+        <section class="contacts">
+            <h2 class="contacts-title">Contacts</h2>
+            <h3 class="contacts-subtitle">Барбершоп «Бородинский»</h3>
+            <address class="contacts-address">
+                <p class="contacts-address-text">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+                <a class="contacts-phone" href="tel:+995999360365">Телефон: +7 (812) 666-02-66</a>
+            </address>
+            <h3 class="contacts-subtitle">Время работы:</h3>
+                <ul class="contacts-schedule">
+                    <li class="contact-schedule-item">пн—пт: с 10:00 до 22:00</li>
+                    <li class="contact-schedule-item">сб—вс: с 10:00 до 19:00</li>
+            </h3>
+            <a class="button" href="map.html">Как проехать</a>
+            <a class="button" href="contacts.html">Обратная связь</a>
+        </section>
+
+        <section class="appointment">
+            <h2 class="appointment-title">Appointment</h2>
+            <p class="appointment-description">Please choose desired date and time after which we will call you and confirm your your request.</p>
+            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+                <p class="appointment-form-date">
+                    <label for="appointment-date">Date</label>
+                    <input type="text" id="appointment-date" name="appointment-date" placeholder="12.08.2022">
+                </p>
+                <p class="appointment-form-time">
+                    <label for="appointment-time">Time</label>
+                    <input type="text" id="appointment-time" name="appointment-time" placeholder="10:00">
+                </p>
+                <p class="appointment-form-phone">
+                    <label for="appointment-phone">Phone</label>
+                    <input type="text" name="appointment-phone" placeholder="+995 555 555 555">
+                </p>
+                <p class="appointment-form-name">
+                    <label for="appointment-name">Name</label>
+                    <input type="text" name="appointment-name" placeholder="John Doe">
+                </p>
+                <button class="button button-submit" type="submit">Book</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="page-footer">
+        <section class="footer-contacts">
+            <h2 class="visually-hidden">Contacts</h2>
+            <img class="footer-logo" src="" alt="Logo of Barbershop">
+            <address class="footer-contacts-address">
+                <p class="footer-about-text">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+                <a class="footer-contacts-address-phone" href="tel:+995999360365">Телефон: +7 (812) 666-02-66</a>
+            </address>
+            <a class="footer-contacts-map-link" href="#"></a>
+        </section>
+        <section class="footer-newsletter">
+            <h2 class="page-footer-title">Get the best offer</h2>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label for="newsletter-email">Email</label>
+                <input class="field" type="email" name="newsletter-email" placeholder="info@domain.com" id="newsletter-email" required>
+                <button class="button newsletter-button" type="submit">
+                    <span class="visually-hidden">Send</span>
+                </button>
+            </form>
+        </section>
+        <section class="footer-social">
+            <h2 class="footer-title">Follow us</h2>
+            <ul class="footer-social-list">
+                <li class="footer-social-item">
+                    <a class="button" href="#">
+                        <span class="visually-hidden">Facebook</span>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="button" href="#">
+                        <span class="visually-hidden">Instagram</span>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a class="button" href="#">
+                        <span class="visually-hidden">Twitter</span>
+                    </a>
+                </li>
+            </ul>
+            
+        </section>
+    </footer>
+</body>
+</html>
