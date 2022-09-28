@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<body>
     <header class="page-header">
         <nav class="navigation">
+            <a class="navigation-logo" href="/">
+                <img class="page-header-logo" src="img/logo-short-light-white.svg" width="140" height="18" alt="Logo of Barbershop Borodinski">
+            </a>
             <ul class="navigation-list">
-                <a class="navigation-logo" href="/">
-                    <img class="page-header-logo" src="img/logo-short-light-white.svg" width="140" height="18" alt="Logo of Barbershop Borodinski">
-                </a>
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">About Us</a>
                 </li>
@@ -57,13 +56,20 @@
                     <a class="breadcrumbs-link" href="index.html">Home</a>
                 </li>
                 <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link">Catalog</a>
+                    <a class="breadcrumbs-link current">Catalog</a>
                 </li>
             </ul>
         </header>
         <section class="catalog-products">
             <h2 class="visually-hidden">Filters For Catalog</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+                
+                <fieldset class="catalog-filter-group">
+                    <legend class="catalog-filter-title">Price</legend>
+                    <input type="range" name="price-range" min="0" max="10000">
+                    <label>From 10$ to 1000$</label>
+
+                </fieldset>
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Manufacturer</legend>
                     <ul class="catalog-filter-list">
@@ -238,7 +244,8 @@
             <img class="footer-logo" src="img/logo-short-light.svg" width="140" height="18" alt="Logo of Barbershop">
             <address class="footer-contacts-address">
                 <p class="footer-about-text">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
-                <a class="footer-contacts-address-phone" href="tel:+995999360365">Телефон: +7 (812) 666-02-66</a>
+                <a class="footer-contacts-phone" href="tel:+995999360365">Телефон: +7 (812) 666-02-66</a>
+                <a class=""
             </address>
             <a class="footer-contacts-map-link" href="#"></a>
         </section>
@@ -253,7 +260,7 @@
             </form>
         </section>
         <section class="footer-social">
-            <h2 class="footer-title">Follow us</h2>
+            <h2 class="page-footer-title">Follow us</h2>
             <ul class="footer-social-list">
                 <li class="footer-social-item">
                     <a class="button" href="#">
