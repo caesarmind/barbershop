@@ -49,237 +49,261 @@
     </header>
 
     <main class="main-inner">
-        <header class="inner-header">
-            <h1 class="inner-header-title">Catalog</h1>
-            <ul class="breadcrumbs">
-                <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="index.html">Home</a>
-                </li>
-                <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link current">Catalog</a>
-                </li>
-            </ul>
-        </header>
-        <section class="catalog-products">
-            <h2 class="visually-hidden">Filters For Catalog</h2>
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+        <div class="page-container">
+            <header class="inner-header">
+                <h1 class="inner-header-title">Catalog</h1>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link" href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link current">Catalog</a>
+                    </li>
+                </ul>
+            </header>
+            <section class="catalog-products">
+                <h2 class="visually-hidden" hidden>Filters For Catalog</h2>
+                <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+                    
+                    <fieldset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">Price</legend>
+                        <input type="range" name="price-range" min="0" max="10000">
+                        <label>From 10$ to 1000$</label>
+
+                    </fieldset>
+                    <fieldset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">Manufacturer</legend>
+                        <ul class="catalog-filter-list">
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="bed-head-for-men">
+                                    Bed Head for Men
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="Home Deep Cleansing Cool">
+                                    Home Deep Cleansing Cool
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="so-intense" checked>
+                                    So Intense
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="bed-head-for-men" checked>
+                                    Sprekenhus
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="bed-head-for-men">
+                                    Bed Head for Men
+                                </label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+
+                    <fieldset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">Bundled Items</legend>
+                        <ul class="catalog-filter-list">
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="shaving-supplies">
+                                    Shaving Supplies
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="Care-Products" checked>
+                                    Care Products
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="accessories">
+                                    Accessories
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="button" type="submit">Show More</button>
+                </form>    
+                <div class="catalog-right-column">
+                    <!-- SORTING -->
+                    <div class="sorting-container">
+                        <form class="sorting-type">
+                            <select class="select-control" aria-label="sorting">
+                                <option value="popular">Most Popular</option>
+                                <option value="cheap">The cheapest</option>
+                                <option value="expensive">The most expensive</option>
+                            </select>
+                            <button class="visually-hidden" type="submit">
+                                Sort Products
+                            </button>
+                        </form> 
+                            <a href="#" class="button button-light">
+                                <span class="visually-hidden">Show as Listing</span>
+                            </a>
+                            <a href="#" class="button">
+                                <span class="visually-hidden">Show as Cards</span>
+                            </a>
                 
-                <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Price</legend>
-                    <input type="range" name="price-range" min="0" max="10000">
-                    <label>From 10$ to 1000$</label>
+                    </div>
 
-                </fieldset>
-                <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Manufacturer</legend>
-                    <ul class="catalog-filter-list">
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="bed-head-for-men">
-                                Bed Head for Men
-                            </label>
+                    <!-- CATALOG PRODUCTS -->
+                    <ul class="product-cards-list">
+                        <li class="product-card">
+                            <a class="product-card-link" href="#">
+                                <img class="product-card-img" src="img/products/product-2.jpg" width="220" height="200" alt="Syos Shampoo Men Power & Strength">
+                                <h3 class="product-card-title">Syos Shampoo Men Power & Strength</h3>
+                            </a>
+                            <b class="product-card-price"> 13.3$</b>
+                            <a class="product-card-button button" href="#">Order</a>
                         </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="Home Deep Cleansing Cool">
-                                Home Deep Cleansing Cool
-                            </label>
+                        <li class="product-card">
+                            <a class="product-card-link" href="#">
+                                <img class="product-card-img" src="img/products/product-3.jpg" width="220" height="200" alt="Schauma Shampoo Men - 'Caress your hair'">
+                                <h3 class="product-card-title">Schauma Shampoo Men - "Caress your hair"</h3>
+                            </a>
+                            <b class="product-card-price"> 26.5$</b>
+                            <a class="product-card-button button" href="#">Order</a>
                         </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="so-intense" checked>
-                                So Intense
-                            </label>
+                        <li class="product-card">
+                            <a class="product-card-link" href="#">
+                                <img class="product-card-img" src="img/products/product-1.jpg" width="220" height="200" alt="Shampoo For Men Brews Daily">
+                                <h3 class="product-card-title">Shampoo For Men Brews Daily</h3>
+                            </a>
+                            <b class="product-card-price"> 16.2$</b>
+                            <a class="product-card-button button" href="#">Order</a>
                         </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="bed-head-for-men" checked>
-                                Sprekenhus
-                            </label>
+                        <li class="product-card">
+                            <a class="product-card-link" href="#">
+                                <img class="product-card-img" src="img/products/product-4.jpg" width="220" height="200" alt="Nivea Men Shampoo with mentol extract">
+                                <h3 class="product-card-title">Nivea Men Shampoo with mentol extract</h3>
+                            </a>
+                            <b class="product-card-price"> 24.00$</b>
+                            <a class="product-card-button button" href="#">Order</a>
                         </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="bed-head-for-men">
-                                Bed Head for Men
-                            </label>
+                        <li class="product-card">
+                            <a class="product-card-link" href="#">
+                                <img class="product-card-img" src="img/products/product-5.jpg" width="220" height="200" alt="Shampoo Amplifier & Thickening">
+                                <h3 class="product-card-title">Shampoo Amplifier & Thickening</h3>
+                            </a>
+                            <b class="product-card-price"> 16.5$</b>
+                            <a class="product-card-button button" href="#">Order</a>
+                        </li>
+                        <li class="product-card">
+                            <a class="product-card-link" href="#">
+                                <img class="product-card-img" src="img/products/product-6.jpg" width="220" height="200" alt="American Crew Shampoo Anti-Dundruff">
+                                <h3 class="product-card-title">American Crew Shampoo Anti-Dundruff</h3>
+                            </a>
+                            <b class="product-card-price">22$</b>
+                            <a class="product-card-button button" href="#">Order</a>
                         </li>
                     </ul>
 
-                </fieldset>
-
-                <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Bundled Items</legend>
-                    <ul class="catalog-filter-list">
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="shaving-supplies">
-                                Shaving Supplies
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="Care-Products" checked>
-                                Care Products
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="accessories">
-                                Accessories
-                            </label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <button class="button" type="submit">Show More</button>
-            </form>    
-
-            <select class="select-control" aria-label="sorting">
-                <option value="popular">Most Popular</option>
-                <option value="cheap">The cheapest</option>
-                <option value="expensive">The most expensive</option>
-            </select>
-
-            <a href="#" class="button button-light">
-                <span class="visually-hidden">Show as Listing</span>
-            </a>
-            <a href="#" class="button">
-                <span class="visually-hidden">Show as Cards</span>
-            </a>
-
-            <ul class="product-cards-list">
-                <li class="product-card">
-                    <a class="product-card-link" href="#">
-                        <img class="product-card-img" src="img/products/product-2.jpg" width="220" height="200" alt="Syos Shampoo Men Power & Strength">
-                        <h3 class="product-card-title">Syos Shampoo Men Power & Strength</h3>
-                    </a>
-                    <b class="product-card-price"> 13.3$</b>
-                    <a class="product-card-button button" href="#">Order</a>
-                </li>
-                <li class="product-card">
-                    <a class="product-card-link" href="#">
-                        <img class="product-card-img" src="img/products/product-3.jpg" width="220" height="200" alt="Schauma Shampoo Men - 'Caress your hair'">
-                        <h3 class="product-card-title">Schauma Shampoo Men - "Caress your hair"</h3>
-                    </a>
-                    <b class="product-card-price"> 26.5$</b>
-                    <a class="product-card-button button" href="#">Order</a>
-                </li>
-                <li class="product-card">
-                    <a class="product-card-link" href="#">
-                        <img class="product-card-img" src="img/products/product-1.jpg" width="220" height="200" alt="Shampoo For Men Brews Daily">
-                        <h3 class="product-card-title">Shampoo For Men Brews Daily</h3>
-                    </a>
-                    <b class="product-card-price"> 16.2$</b>
-                    <a class="product-card-button button" href="#">Order</a>
-                </li>
-                <li class="product-card">
-                    <a class="product-card-link" href="#">
-                        <img class="product-card-img" src="img/products/product-4.jpg" width="220" height="200" alt="Nivea Men Shampoo with mentol extract">
-                        <h3 class="product-card-title">Nivea Men Shampoo with mentol extract</h3>
-                    </a>
-                    <b class="product-card-price"> 24.00$</b>
-                    <a class="product-card-button button" href="#">Order</a>
-                </li>
-                <li class="product-card">
-                    <a class="product-card-link" href="#">
-                        <img class="product-card-img" src="img/products/product-5.jpg" width="220" height="200" alt="Shampoo Amplifier & Thickening">
-                        <h3 class="product-card-title">Shampoo Amplifier & Thickening</h3>
-                    </a>
-                    <b class="product-card-price"> 16.5$</b>
-                    <a class="product-card-button button" href="#">Order</a>
-                </li>
-                <li class="product-card">
-                    <a class="product-card-link" href="#">
-                        <img class="product-card-img" src="img/products/product-6.jpg" width="220" height="200" alt="American Crew Shampoo Anti-Dundruff">
-                        <h3 class="product-card-title">American Crew Shampoo Anti-Dundruff</h3>
-                    </a>
-                    <b class="product-card-price">22$</b>
-                    <a class="product-card-button button" href="#">Order</a>
-                </li>
-            </ul>
-
-            <ul class="pagination">
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-prev pagination-disabled">
-                        <span class="visually-hidden">Previous Page</span>
-                    </a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-current">
-                        <span class="visually-hidden">1</span>
-                    </a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">
-                        <span class="visually-hidden">2</span>
-                    </a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">
-                        <span class="visually-hidden">3</span>
-                    </a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">
-                        <span class="visually-hidden">4</span>
-                    </a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">
-                        <span class="visually-hidden">5</span>
-                    </a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-next" href="#">
-                        <span class="visually-hidden">Next Page</span>
-                    </a>
-                </li>
-            </ul>
-            <button class="button pagination-show-more" type="button">Show more</button>
-        </section>
+                    <!-- PAGINATION -->
+                    <div class="pagination">
+                        <ul class="pagination-list">
+                            <li class="pagination-item">
+                                <a class="pagination-link pagination-prev pagination-disabled">
+                                    <span class="visually-hidden">Previous Page</span>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link pagination-current">
+                                    <span class="visually-hidden">1</span>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link" href="#">
+                                    <span class="visually-hidden">2</span>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link" href="#">
+                                    <span class="visually-hidden">3</span>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link" href="#">
+                                    <span class="visually-hidden">4</span>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link" href="#">
+                                    <span class="visually-hidden">5</span>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link pagination-next" href="#">
+                                    <span class="visually-hidden">Next Page</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="button pagination-show-more" type="button">Show more</button>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer class="page-footer">
-        <section class="footer-contacts">
-            <h2 class="visually-hidden">Contacts</h2>
-            <img class="footer-logo" src="img/logo-short-light.svg" width="140" height="18" alt="Logo of Barbershop">
-            <address class="footer-contacts-address">
-                <p class="footer-about-text">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
-                <a class="footer-contacts-phone" href="tel:+995999360365">Телефон: +7 (812) 666-02-66</a>
-                <a class=""
-            </address>
-            <a class="footer-contacts-map-link" href="#"></a>
-        </section>
-        <section class="footer-newsletter">
-            <h2 class="page-footer-title">Get the best offer</h2>
-            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="newsletter-email">Email</label>
-                <input class="field" type="email" name="newsletter-email" placeholder="info@domain.com" id="newsletter-email" required>
-                <button class="button newsletter-button" type="submit">
-                    <span class="visually-hidden">Send</span>
-                </button>
-            </form>
-        </section>
-        <section class="footer-social">
-            <h2 class="page-footer-title">Follow us</h2>
-            <ul class="footer-social-list">
-                <li class="footer-social-item">
-                    <a class="button" href="#">
-                        <span class="visually-hidden">Facebook</span>
-                    </a>
-                </li>
-                <li class="footer-social-item">
-                    <a class="button" href="#">
-                        <span class="visually-hidden">Instagram</span>
-                    </a>
-                </li>
-                <li class="footer-social-item">
-                    <a class="button" href="#">
-                        <span class="visually-hidden">Twitter</span>
-                    </a>
-                </li>
-            </ul>
+        <div class="page-footer-container">
+            <section class="footer-contacts">
+                <h2 class="visually-hidden">Contacts</h2>
+                <img class="footer-logo" src="img/logo-short-light.svg" width="140" height="18" alt="Logo of Barbershop">
+                <address class="footer-contacts-address">
+                    <p class="footer-about-text">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+                    <a class="footer-contacts-phone" href="tel:+995999360365">Телефон: +7 (812) 666-02-66</a>
+                    <a class="footer-contacts-phone" href="tel:+995999360365">How to find us?</a>
+                    
+                </address>
+                <a class="footer-contacts-map-link" href="#"></a>
+            </section>
+            <section class="footer-newsletter">
+                <h2 class="page-footer-title">Get the best offer</h2>
+                <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label for="newsletter-email">Email</label>
+                    <input class="field" type="email" name="newsletter-email" placeholder="info@domain.com" id="newsletter-email" required>
+                    <button class="button newsletter-button" type="submit">
+                        <span class="visually-hidden">Send</span>
+                    </button>
+                </form>
+            </section>
+            <section class="footer-social">
             
-        </section>
+                <h2 class="page-footer-title">Follow us</h2>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                        <a class="button" href="#">
+                            <span class="visually-hidden">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="button" href="#">
+                            <span class="visually-hidden">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a class="button" href="#">
+                            <span class="visually-hidden">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+                <span class="copyright">
+                    Design by
+                    <a class="copyright-link">.html academy</a>
+                </span>
+                
+                
+            </section>
+        </div>
     </footer>
 </body>
 </html>
