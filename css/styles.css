@@ -243,7 +243,18 @@ body {
     text-transform: uppercase;
 }
 .appointment-form {
+    display: grid;
+    grid-template-columns: 114px 74px 208px;
+    gap: 17px;
     color: #595959;
+}
+.appointment-form-name {
+    grid-column: 1 / -1;
+}
+.field-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 .form-label {
     line-height: 24px;
@@ -373,14 +384,38 @@ body {
 
 /* Product List */
 .product-card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
     margin: 0;
     padding: 0;
     list-style: none;
+    gap: 20px;
+    margin-bottom: 24px;
 }
-.product-card-link {
+.product-card {
+    display: grid;
+    grid-template-rows: 200px min-content auto min-content 16px;
+    grid-template-columns: 16px 188px 16px;
+    background-color: #FFF;
+}
+.product-card-img-link {
+    grid-column: 1 / -1;
+}
+.product-card-title-lin,
+.product-card-title-link,
+.product-card-price,
+.product-card-button {
+    grid-column: 2 / 3;
+}
+.product-card-title-link {
+    margin-top: 16px;
+    margin-bottom: 8px;
     font-weight: 700;
-    text-decoration: none;
     color: #000000;
+    text-decoration: none;
+}
+.product-card-title {
+    margin: 0;
 }
 .product-card-price {
     font-family: 'PT Sans Narrow';
@@ -388,6 +423,7 @@ body {
     font-size: 24px;
     line-height: 28px;
     color: #814B18;
+    margin-bottom: 16px;
 }
 .button {
     font-family: inherit;
