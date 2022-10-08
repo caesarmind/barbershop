@@ -146,12 +146,32 @@
                                 Sort Products
                             </button>
                         </form> 
-                            <button href="#" class="button button-light">
+                            <a href="#" class="card-grid-toggle card-grid-toggle-current">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#a)">
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-2 8a2 2 0 1 1 4 0 2 2 0 0 1-4 0ZM7 1a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2H7ZM6 8a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm1 5a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H7Z" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="a">
+                                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
                                 <span class="visually-hidden">Show as Listing</span>
-                            </button>
-                            <button href="#" class="button">
+                            </a>
+                            <a href="#" class="card-grid-toggle">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#a)">
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2a2 2 0 1 1 4 0 2 2 0 1 1-4 0Zm6 0a2 2 0 1 1 4 0 2 2 0 1 1-4 0Zm10 0a2 2 0 1 0-4 0 2 2 0 1 0 4 0ZM0 8a2 2 0 1 1 4 0 2 2 0 1 1-4 0Zm10 0a2 2 0 1 0-4 0 2 2 0 1 0 4 0Zm2 0a2 2 0 1 1 4 0 2 2 0 1 1-4 0Zm-8 6a2 2 0 1 0-4 0 2 2 0 1 0 4 0Zm2 0a2 2 0 1 1 4 0 2 2 0 1 1-4 0Zm10 0a2 2 0 1 0-4 0 2 2 0 1 0 4 0Z"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="a">
+                                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
                                 <span class="visually-hidden">Show as Cards</span>
-                            </button>
+                            </a>
                 
                     </div>
 
@@ -211,7 +231,7 @@
                             <a class="product-card-img-link" href="#">
                                 <img class="product-card-img" src="img/products/product-6.jpg" width="220" height="200" alt="American Crew Shampoo Anti-Dundruff">
                             </a>
-                            <a class="product-card-title-link" href="#">
+                                <a class="product-card-link" href="#">
                                 <h3 class="product-card-title">American Crew Shampoo Anti-Dundruff</h3>
                             </a>
                             <b class="product-card-price">22$</b>
@@ -281,7 +301,7 @@
             <section class="footer-newsletter">
                 <h2 class="page-footer-title">Get the best offer</h2>
                 <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-                    <label for="newsletter-email">Email</label>
+                    <label class="visually-hidden" for="newsletter-email">Email</label>
                     <input class="field" type="email" name="newsletter-email" placeholder="info@domain.com" id="newsletter-email" required>
                     <button class="button newsletter-button" type="submit">
                         <span class="visually-hidden">Send</span>
@@ -293,17 +313,17 @@
                 <h2 class="page-footer-title">Follow us</h2>
                 <ul class="footer-social-list">
                     <li class="footer-social-item">
-                        <a class="button" href="#">
-                            <span class="visually-hidden">Facebook</span>
+                        <a class="footer-social-link footer-social-vk" href="#">
+                            <span class="visually-hidden">Vkontakte</span>
                         </a>
                     </li>
                     <li class="footer-social-item">
-                        <a class="button" href="#">
+                        <a class="footer-social-link footer-social-ig" href="#">
                             <span class="visually-hidden">Instagram</span>
                         </a>
                     </li>
                     <li class="footer-social-item">
-                        <a class="button" href="#">
+                        <a class="footer-social-link  footer-social-tw" href="#">
                             <span class="visually-hidden">Twitter</span>
                         </a>
                     </li>
