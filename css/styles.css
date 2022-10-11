@@ -64,6 +64,9 @@ body {
     background-color: #FBF7F4;
     background-image: url("../img/bg-pattern-column.png");
 }
+.inner-header {
+    margin-bottom: 32px;
+}
 .inner-header-title {
     margin: 0;
     margin-bottom: 16px;
@@ -107,6 +110,20 @@ body {
     text-transform: uppercase;
     color: inherit;
 }
+.navigation-link-current::after {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    border: 1px solid #FFFFFF;
+    bottom:0px;
+    content: "";
+}
+.navigation-link:hover {
+    background: #595959;
+}
+.navigation-link:focus {
+    box-shadow: inset 0 0 0 4px  #E7E7E7;
+}
 .navigation-link-login {
     padding-left: 44px;
 }
@@ -143,6 +160,7 @@ body {
 .navigation-logo {
     width: 140px;
     margin-right: 100px;
+    align-self: center;
 }
 
 /* 5ges */
@@ -157,6 +175,7 @@ body {
     list-style: none;
 }
 .advantages-item {
+    position: relative;
     width: 277px;
 }
 .advantages-title {
@@ -168,6 +187,17 @@ body {
     margin-top: 0;
     margin-bottom: 56px;
 }
+.advantages-title::after {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: #FFFFFF;
+    transform: rotate(45deg);
+    top: 50px;
+    left: 50%;
+    margin-left: -6.5px;
+    content: "";
+}
 .advantages-desc {
     margin: 0;
 }
@@ -175,6 +205,7 @@ body {
 
 .column-group {
     display: flex;
+    position: relative;
     justify-content: space-between;
     padding: 40px;
     margin-bottom: 32px;
@@ -182,7 +213,19 @@ body {
     color: #242424;
     background-image: url("../img/bg-pattern-column.png");
 }
-.column-group:last-child {
+.column-group::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    top: 40px;
+    bottom: 40px;
+    border-left: 1px dotted #814B18;
+}
+.column-group:first-of-type::after {
+    left: 473px;
+}
+.column-group:last-of-type::after {
+    left: 432px;
     margin-bottom: 0;
 }
 
@@ -198,17 +241,38 @@ body {
     line-height: 35px;
     font-weight: 700;
 }
-
 .services-list {
     font-size: 20px;
     line-height: 28px;
     font-weight: 700;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+.services-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.services-item:not(:last-child) {
+    margin-bottom: 22px;
+}
+.services-item::before {
+    flex-grow: 1;
+    order: 2;
+    border-bottom: 2px dotted #595959;
+    margin: 0 16px;
+    bottom: 2px;
+    content: "";
 }
 .services-price {
+    order: 3;
     color: #AF7842;
 }
 
 /* Gallery */
+.gallery {
+    width: 390px;
+}
 .gallery-title {
     margin-top: 0;
     margin-bottom: 28px;
@@ -239,6 +303,16 @@ body {
     line-height: 28px;
     text-transform: uppercase;
     color: #AF7842;
+    margin: 8px 0 8px 0;
+
+}
+.contacts-address-text {
+    margin: 0 0 8px 0;
+}
+.contacts-schedule {
+    list-style: none;
+    margin: 8px 0;
+    padding: 0;
 }
 .contacts-phone {
     font-size: 24px;
@@ -247,6 +321,10 @@ body {
     text-transform: uppercase;
     color: #242424;
 }
+.contacts-navigation {
+    margin-top: 21px;
+    margin-bottom: 0;
+}
 
 /* Appointment */
 .appointment {
@@ -254,17 +332,21 @@ body {
 }
 .appointment-title {
     margin-top: 0;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     font-size: 32px;
     line-height: 35px;
     font-weight: 700;
     text-transform: uppercase;
+}
+.appointment-description {
+    margin: 0;
 }
 .appointment-form {
     display: grid;
     grid-template-columns: 114px 74px 208px;
     gap: 17px;
     color: #595959;
+    margin-top: 24px;
 }
 .appointment-form-name {
     grid-column: 1 / -1;
@@ -273,6 +355,12 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+}
+.field {
+    padding: 10px 16px;
+    width: 100%;
+    box-shadow: inset 0 0 0 2px #000000;
+    border: none;
 }
 .form-label {
     line-height: 24px;
@@ -293,6 +381,20 @@ body {
     color: #FFFFFF;
     background-color: #242424;
     background-image: url("../img/bg-pattern-column.png");
+}
+.footer-contacts-map-link {
+    display: inline-block;
+    margin-top: 16px;
+    text-transform: uppercase;
+    
+}
+.footer-contacts-phone,
+.footer-contacts-map-link{
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: underline;
 }
 .footer-contacts {
     width: 200px;
@@ -374,9 +476,24 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    position: relative;
+}
+.breadcrumbs-item {
+    position: relative;
+    margin-right: 32px;
+}
+.breadcrumbs-item::after {
+    position: absolute;
+    content: '';
+    height: 8px;
+    width: 8px;
+    background-color: #242424;
+    transform: rotate(45deg);
+    right: -20px;
+    top: 9px;
+
 }
 .breadcrumbs-link {
-    margin-right: 32px;
     color: #242424;
 }
 .breadcrumbs-link .current {
@@ -509,10 +626,39 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
 }
+.button:hover {
+    background-color: #814B18;
+}
+.button:focus {
+    background-color: #814B18;
+    box-shadow: inset 0 0 0 2px #DBB590;
+}
+.button:disabled {
+    background-color: #595959;
+}
+.button:disabled:hover {
+    background-color: #595959;
+}
+.button + .button {
+    margin-left: 16px;
+}
+
 .button-light {
     background-color: #FFFFFF;
-    fill: #000000;
+    color: #242424;
+}
+.button-light:hover {
+    background-color: #DBB590;
+
+}
+.button-light:focus {
+    box-shadow: inset 0 0 0 2px #AF7842;
+}
+.button-light:disabled {
+    background-color: #595959;
+    color: #FFFFFF;
 }
 .button-all {
     padding-right: 44px;
