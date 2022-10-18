@@ -29,21 +29,49 @@
             <ul class="navigation-list navigation-user">
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">
+
+                        <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#a)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm-.67 5.25a6.5 6.5 0 1 1 1.41-1.41l3.97 3.95-1.42 1.42-3.96-3.96Z"/></g>
+                            <defs>
+                                <clipPath id="a">
+                                <path fill="#fff" d="M0 0h16v16H0z"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
                         <span class="visually-hidden">
                             Search
                         </span>
                     </a>
                 </li>
+                
                 <li class="navigation-item">
                     <a class="navigation-link" href="#">
+                        <svg class="navigation-icon" aria-hidden="true" focusable="false"  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#a)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.1 6 3.57.9l.08-.9h8.67l.1.9.48 5.1H15.63l-.14 1.12-1 8-.1.88H1.61l-.11-.88-1-8L.37 6H3.1Zm2 0h5.8l-.38-4H5.48L5.1 6Zm-1.72 8-.75-6h10.74l-.75 6H3.38ZM8.5 9.5v3h2v-3h-2Zm-3 3v-3h2v3h-2Z" />
+                            </g>
+                                <defs>
+                                    <clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath>
+                                </defs>
+                        </svg>
                         <span class="visually-hidden">
                             Cart
                         </span>
                     </a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="#">Login</a>
+                    <a class="navigation-link" href="#">
+
+                        <svg class="navigation-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 2a6 6 0 0 0-6 6h12a6 6 0 0 0-6-6Z" />
+                          </svg>
+                        <span class="visually-hidden">
+                            User Profile
+                        </span>
+                    </a>
                 </li>
+                
             </ul>
         </nav>
     </header>
@@ -67,8 +95,27 @@
                     
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Price</legend>
-                        <input type="range" name="price-range" min="0" max="10000">
-                        <label>From 10$ to 1000$</label>
+                        <div class="range">
+                            <div class="range-scale">
+                                <div class="range-bar" style="left:40px; width:100px;">
+                                    <button class="range-toggle toggle-min">
+                                        <span class="visually-hidden">Edit Min Price</span>
+                                    </button>
+                                    <button class="range-toggle toggle-max">
+                                        <span class="visually-hidden">Edit Max Price</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="range-wrapper-inputs">
+                                <label class="catalog-filter-label">
+                                    From <input class="range-input" name="min-price" value="10" type="number">$
+                                </label>
+                                <label class="catalog-filter-label">
+                                    To <input class="range-input" name="max-price" value="500" type="number" style="width: 35px;">
+                                    $
+                                </label>
+                            </div>
+                        </div>
 
                     </fieldset>
                     <fieldset class="catalog-filter-group">
@@ -76,32 +123,38 @@
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="bed-head-for-men">
-                                    Bed Head for Men
+                                    <input class="visually-hidden control-input" type="checkbox" name="bed-head-for-men">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Bed Head for Men</span>
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="Home Deep Cleansing Cool">
-                                    Home Deep Cleansing Cool
+                                    <input class="visually-hidden control-input" type="checkbox" name="Home Deep Cleansing Cool">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">
+                                    Home Deep Cleansing Cool</span>
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="so-intense" checked>
-                                    So Intense
+                                    <input class="visually-hidden control-input" type="checkbox" name="so-intense" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">So Intense</span>
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="bed-head-for-men" checked>
-                                    Sprekenhus
+                                    <input class="visually-hidden control-input" type="checkbox" name="bed-head-for-men" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Sprekenhus</span>
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="bed-head-for-men">
-                                    Bed Head for Men
+                                    <input class="visually-hidden control-input" type="checkbox" name="bed-head-for-men">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Bed Head for Men</span>
                                 </label>
                             </li>
                         </ul>
@@ -113,20 +166,23 @@
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="shaving-supplies">
-                                    Shaving Supplies
+                                    <input class="visually-hidden control-input" type="radio"  name="bundled-items" value="Shaving-Supplies">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Supplies</span> 
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="Care-Products" checked>
-                                    Care Products
+                                    <input class="visually-hidden control-input" type="radio" name="bundled-items" value="care-products" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Care Products</span>
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="accessories">
-                                    Accessories
+                                    <input class="visually-hidden control-input" type="radio"  name="bundled-items" value="accessories">
+                                    <span class="control-mark"></span>
+                                    <span class="control-label">Accessories</span>
                                 </label>
                             </li>
                         </ul>
@@ -137,14 +193,17 @@
                     <!-- SORTING -->
                     <div class="sorting-container">
                         <form class="sorting-type">
+                            <div class="select">
                             <select class="select-control" aria-label="sorting">
                                 <option value="popular">Most Popular</option>
                                 <option value="cheap">The cheapest</option>
                                 <option value="expensive">The most expensive</option>
                             </select>
+                        </div>
                             <button class="visually-hidden" type="submit">
                                 Sort Products
                             </button>
+
                         </form> 
                             <a href="#" class="card-grid-toggle card-grid-toggle-current">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
